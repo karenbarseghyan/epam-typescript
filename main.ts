@@ -20,7 +20,6 @@ abstract class CarOptions extends Car{
     decoratedCar: Car;
     public abstract getDescription(): string;
     public abstract cost(): number;
-
 }
 
 class setDoorColor extends CarOptions{
@@ -45,6 +44,8 @@ class setEngine extends CarOptions{
         super();
         this.decoratedCar =car
     }
+    public engineDrive: string;
+
     public getDescription(): string{
         return `${this.decoratedCar.getDescription()} Hybrid-Engine`
     };
@@ -58,5 +59,13 @@ class setEngine extends CarOptions{
 let myMersedes = new Mersedes();
 myMersedes = new setDoorColor(myMersedes);
 myMersedes = new setEngine(myMersedes);
-console.log(myMersedes.cost());
-console.log(myMersedes.getDescription());
+
+let priceCalculation = () => {
+    console.log(myMersedes.cost());
+}
+
+(function printResult() {
+    priceCalculation();
+    console.log(myMersedes.getDescription());
+})();
+

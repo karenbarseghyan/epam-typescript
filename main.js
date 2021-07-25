@@ -79,5 +79,10 @@ var setEngine = /** @class */ (function (_super) {
 var myMersedes = new Mersedes();
 myMersedes = new setDoorColor(myMersedes);
 myMersedes = new setEngine(myMersedes);
-console.log(myMersedes.cost());
-console.log(myMersedes.getDescription());
+var priceCalculation = function () {
+    console.log(myMersedes.cost());
+};
+(function printResult() {
+    priceCalculation();
+    console.log(myMersedes.getDescription());
+})();
