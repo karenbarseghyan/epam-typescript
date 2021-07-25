@@ -76,8 +76,8 @@ var setEngine = /** @class */ (function (_super) {
     ;
     return setEngine;
 }(CarOptions));
-var myTesla = new Mersedes();
-myTesla = new setDoorColor(myTesla);
-myTesla = new setEngine(myTesla);
-console.log(myTesla.cost());
-console.log(myTesla.getDescription());
+var myMersedes = new Mersedes();
+myMersedes = new setDoorColor(myMersedes);
+myMersedes = new setEngine(myMersedes);
+console.log(myMersedes.cost());
+console.log(myMersedes.getDescription());

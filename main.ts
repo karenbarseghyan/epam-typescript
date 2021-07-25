@@ -55,8 +55,8 @@ class setEngine extends CarOptions{
     };
 }
 
-let myTesla = new Mersedes();
-myTesla = new setDoorColor(myTesla);
-myTesla = new setEngine(myTesla);
-console.log(myTesla.cost());
-console.log(myTesla.getDescription());
+let myMersedes = new Mersedes();
+myMersedes = new setDoorColor(myMersedes);
+myMersedes = new setEngine(myMersedes);
+console.log(myMersedes.cost());
+console.log(myMersedes.getDescription());
